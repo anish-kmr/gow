@@ -1,8 +1,8 @@
 
 *{font-family: 'Kratos TrueType - GOD $ WAR','arial';color:#561302;} 
 #bg{position: fixed;width: 100%;height: 100%;	
-	background:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.8)),url('sources\bg-2.jpg');
-	background-size: cover;
+	background:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.8)),url('sources\\bg-2.jpg');
+	background-size: cover; 
 	z-index: -2;}
 #top{
 	position: fixed;
@@ -39,7 +39,7 @@
 .header{
 		-webkit-clip-path: polygon(100% 0, 100% 36%, 43% 7%, 0 20%, 0 0);
 		clip-path: polygon(100% 0, 100% 36%, 43% 7%, 0 20%, 0 0);
-		background-image: url('sources\head.jpg');
+		background-image: url('sources\\head.jpg');
 		background-repeat: no-repeat;
 		background-size: contain;
 		height: 100%;
@@ -70,4 +70,10 @@
 }
 .intro{/* background:url('sources\\bg-2.jpg') fixed; */padding: 10% 0px;}
 .story{background-color: #0E0E0E;padding:10px;}
-.slider{}
+fieldset{
+	border:2px ridge grey;
+	background-color: #0E0E0E;
+}
+.char-img{
+	height: 15%;
+}
