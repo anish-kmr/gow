@@ -32,7 +32,7 @@
 .header{
 		-webkit-clip-path: polygon(100% 0, 100% 36%, 43% 7%, 0 20%, 0 0);
 		clip-path: polygon(100% 0, 100% 36%, 43% 7%, 0 20%, 0 0);
-		background-image: url('sources\\head.jpg');
+		background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,1)),url('sources\\head.jpg');
 		background-repeat: no-repeat;
 		background-size: contain;
 		height: 95%;
@@ -54,7 +54,7 @@
 .header ul li a{
 	font-family: 'Kratos TrueType - GOD $ WAR','arial';
 	font-size:1.2em;
-	color:#561302;
+	color:#ffe9d9;
 	padding: 10px 20px;
 	border-radius: 15px;
 }
@@ -80,7 +80,7 @@ fieldset{
 @media (max-width: 980px){
 	.header{
 		-webkit-clip-path:none;
-		background-image: url('sources\\head.jpg');
+		background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.8)), url('sources\\head.jpg');
 		background-repeat: no-repeat;
 		background-size: cover;
 		height: 15%;
@@ -96,6 +96,7 @@ fieldset{
 
 }
 
-@media (max-width: 576px){
+@media (min-width: 576px and max-width: 980px){
 	#top,#left,#down,#right{display: none;}
+	.intro{margin-top:20%;outline: 1px solid white;z-index: 5;}
 }
