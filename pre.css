@@ -68,7 +68,7 @@
 .intro p{color:white;line-height: 2em;}
 .story{background-color: #0E0E0E;padding:10px;}
 fieldset{
-	border:2px ridge grey;
+	border:4px ridge black;
 	background-color: #0E0E0E;
 }
 .carousel p{
@@ -76,7 +76,23 @@ fieldset{
 	color:#d84141;
 }
 .carousel h2{color: #bb0808;}
+.char-img{transition: all 0.5s;}
+.char-img:hover{opacity: 0.3;}
+.modal-body{
+	background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.7)), url('sources\\modal.jpg');
+	background-size: contain;
+	color: #DCE7CC;
+	font-family: Georgia;}
+.modal-header{
+	background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.7)), #0E0E0E;
+}
+.modal button{color: red;}
+pre{color: #DCE7CC;}
 
+
+
+
+/* =====================================|    MEDIA QUERIES     |========================================== */
 
 @media screen and (max-width: 980px){
 	.header{
@@ -88,7 +104,7 @@ fieldset{
 		width: 100%;
 		position: absolute;
 		z-index: 2;
-		top: 1%;
+
 
 }
 	.menu{margin-top: 8%;}
