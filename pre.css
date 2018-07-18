@@ -41,7 +41,7 @@
 		z-index: 2;
 		box-shadow: 0px 5px 100px #2f0c01;
 }
-.header img{display: inline-block;margin-top: 8%;margin-left: 25%;}
+.header img{display: inline-block; margin-top: 5%;margin-left: 20%;}
 .header ul{
 	float: right;
 }
@@ -76,7 +76,7 @@ fieldset{
 	color:#d84141;
 }
 .carousel h2{color: #bb0808;}
-.char-img{transition: all 0.5s;}
+.char-img{transition: all 0.5s;height: 100%;;width: 100%;}
 .char-img:hover{opacity: 0.3;}
 .modal-body{
 	background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.7)), url('sources\\modal.jpg');
@@ -88,7 +88,6 @@ fieldset{
 }
 .modal button{color: red;}
 pre{color: #DCE7CC;}
-
 
 
 
