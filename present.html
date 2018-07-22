@@ -717,17 +717,28 @@ Right, brother?	”
 <!-- ========================================|   E N D     |=============================================== -->
 	</div>
 <script>
-//define function to load css
-var loadCss = function(){
-    var cssLink = document.createElement('link');
+var head = document.getElementsByTagName( "head" )[0],
+ body = document.body,
+ css = document.createElement( "link" ),
+ img = document.createElement( "img" ),
+ cssUrl = "pre.css";
+
+css.href = cssUrl;
+css.rel = "stylesheet";
+head.appendChild( css );
+
+img.onerror = function() {
+ // Code to execute when the stylesheet is loaded
+ var cssLink = document.createElement('link');
     cssLink.rel = 'stylesheet';
     cssLink.href = 'animation.css';
     var head = document.getElementsByTagName('head')[0];
     head.parentNode.insertBefore(cssLink, head);
-};
- 
-//call function on window load
-window.addEventListener('load', loadCss);
+ body.removeChild( img );
+}
+
+body.appendChild( img );
+img.src = cssUrl;
 </script>
 </body>
 </html>
