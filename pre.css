@@ -129,6 +129,7 @@ h2,h4,a{position: relative;z-index: 2;}
 
 
 }
+	.prefooter, .footer{-webkit-clip-path:none;}
 	.menu{margin-top: 8%;}
 	.intro{margin-top:20%;}
 }
