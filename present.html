@@ -716,6 +716,18 @@ Right, brother?	”
 
 <!-- ========================================|   E N D     |=============================================== -->
 	</div>
-<link rel="stylesheet" type="text/css" href="animation.css">
+<script>
+//define function to load css
+var loadCss = function(){
+    var cssLink = document.createElement('link');
+    cssLink.rel = 'stylesheet';
+    cssLink.href = 'animation.css';
+    var head = document.getElementsByTagName('head')[0];
+    head.parentNode.insertBefore(cssLink, head);
+};
+ 
+//call function on window load
+window.addEventListener('load', loadCss);
+</script>
 </body>
 </html>
